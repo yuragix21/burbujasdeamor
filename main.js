@@ -3,7 +3,7 @@ let numCircles = 100; // Número total de círculos
 
 // Si es un dispositivo móvil, reducir el número total de círculos a 50
 if (window.matchMedia("(max-width: 600px)").matches) {
-  numCircles = 40;
+  numCircles = 50;
 }
 
 const numCircles1 = Math.ceil(numCircles / 2); // Número de círculos de tipo circle
