@@ -1,12 +1,20 @@
 const container = document.getElementById('container');
-const numCircles = Math.floor(Math.random() * 100) + 1; // Genera un número aleatorio de círculos entre 1 y 10
+let numCircles = 100; // Número total de círculos
 
-for (let i = 0; i < numCircles; i++) {
-  if (Math.random() < 0.5) {
-    createCircle('circle'); // Llama a createCircle para el círculo 'circle'
-  } else {
-    createCircle('circle2'); // Llama a createCircle para el círculo 'circle2'
-  }
+// Si es un dispositivo móvil, reducir el número total de círculos a 50
+if (window.matchMedia("(max-width: 600px)").matches) {
+  numCircles = 50;
+}
+
+const numCircles1 = Math.ceil(numCircles / 2); // Número de círculos de tipo circle
+const numCircles2 = Math.floor(numCircles / 2); // Número de círculos de tipo circle2
+
+for (let i = 0; i < numCircles1; i++) {
+  createCircle('circle'); // Llama a createCircle para el círculo 'circle'
+}
+
+for (let i = 0; i < numCircles2; i++) {
+  createCircle('circle2'); // Llama a createCircle para el círculo 'circle2'
 }
 
 function createCircle(className) {
