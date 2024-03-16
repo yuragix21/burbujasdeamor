@@ -67,6 +67,7 @@ body {
         top: 50%; /* Alinea el 50% del contenedor */
         left: 50%; /* Alinea el 50% del contenedor */
         transform: translate(-50%, -50%); /* Centra el texto */
+        color: rgb(187, 163, 27);
     }
   }
   
