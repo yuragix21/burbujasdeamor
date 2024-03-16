@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    background-image: url('img/background2.jpg');
 }
 
   .circle {
@@ -34,6 +35,7 @@ body {
     top: 50%; /* Alinea el 50% del contenedor */
     left: 50%; /* Alinea el 50% del contenedor */
     transform: translate(-50%, -50%); /* Centra el texto */
+    color: rgb(187, 163, 27);
 }
 
 #container {
